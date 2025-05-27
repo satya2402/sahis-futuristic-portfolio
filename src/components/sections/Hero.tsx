@@ -5,11 +5,21 @@ import { Button } from '@/components/ui/button';
 
 interface HeroProps {
   isVisible: boolean;
-  onDownloadResume: () => void;
   onScrollToSection: (section: string) => void;
 }
 
-const Hero = ({ isVisible, onDownloadResume, onScrollToSection }: HeroProps) => {
+const Hero = ({ isVisible, onScrollToSection }: HeroProps) => {
+  const handleDownloadResume = () => {
+    // Replace this URL with your actual resume file URL
+    const resumeUrl = '/resume.pdf'; // You'll need to add your resume file to the public folder
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Khambhampati_Sahith_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative px-4">
       <div className={`text-center max-w-4xl mx-auto transform transition-all duration-1000 ${
@@ -23,7 +33,7 @@ const Hero = ({ isVisible, onDownloadResume, onScrollToSection }: HeroProps) => 
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Button
-            onClick={onDownloadResume}
+            onClick={handleDownloadResume}
             className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
             <Download className="mr-2 h-5 w-5" />

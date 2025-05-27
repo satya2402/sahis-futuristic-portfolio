@@ -45,20 +45,12 @@ const Index = () => {
     }
   };
 
-  const handleDownloadResume = () => {
-    toast({
-      title: "Resume Download",
-      description: "Resume download would be initiated here. Please add your resume link.",
-    });
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
       <AnimatedBackground />
       <Navigation activeSection={activeSection} onScrollToSection={scrollToSection} />
       <Hero 
         isVisible={isVisible} 
-        onDownloadResume={handleDownloadResume} 
         onScrollToSection={scrollToSection} 
       />
       <About />

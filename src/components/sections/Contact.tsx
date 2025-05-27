@@ -21,14 +21,18 @@ const Contact = () => {
             Email Me
           </a>
           <a
-            href="#"
+            href="https://github.com/sahithkumar1999"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center bg-gradient-to-r from-gray-700 to-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
           >
             <Github className="mr-2 h-5 w-5" />
             GitHub
           </a>
           <a
-            href="#"
+            href="https://linkedin.com/in/sahith-kumar-khambhampati"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
           >
             <Linkedin className="mr-2 h-5 w-5" />
