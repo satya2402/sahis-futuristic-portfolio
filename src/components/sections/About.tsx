@@ -4,10 +4,10 @@ import { User, MapPin, Mail, Phone } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const codingProfiles = [
-  { name: 'HackerRank', url: 'http://tinyurl.com/2kfnp9nk', color: 'bg-green-500' },
-  { name: 'CodeChef', url: 'http://tinyurl.com/tsc2zd7j', color: 'bg-orange-500' },
-  { name: 'LeetCode', url: 'http://tinyurl.com/yu24fpty', color: 'bg-yellow-500' },
-  { name: 'Codeforces', url: 'https://tinyurl.com/yvydtvju', color: 'bg-blue-500' }
+  { name: 'HackerRank', url: 'https://www.hackerrank.com/profile/h2100030252', color: 'bg-green-500' },
+  { name: 'CodeChef', url: 'https://www.codechef.com/users/klu_252', color: 'bg-orange-500' },
+  { name: 'LeetCode', url: 'https://leetcode.com/u/2100030252/', color: 'bg-yellow-500' },
+  { name: 'Codeforces', url: 'https://codeforces.com/profile/Sahithkhambhampati', color: 'bg-blue-500' }
 ];
 
 const About = () => {
@@ -55,7 +55,7 @@ const About = () => {
                   href={profile.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${profile.color} p-4 rounded-lg text-white text-center font-semibold hover:scale-105 transition-transform duration-300`}
+                  className={`${profile.color} p-4 rounded-lg text-white text-center font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer`}
                 >
                   {profile.name}
                 </a>

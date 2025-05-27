@@ -15,7 +15,7 @@ const Contact = () => {
         <div className="flex justify-center space-x-6 mb-8">
           <a
             href="mailto:2100030252cseh@gmail.com"
-            className="flex items-center bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
+            className="flex items-center bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer"
           >
             <Mail className="mr-2 h-5 w-5" />
             Email Me
@@ -24,7 +24,7 @@ const Contact = () => {
             href="https://github.com/sahithKhambhampati"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center bg-gradient-to-r from-gray-700 to-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
+            className="flex items-center bg-gradient-to-r from-gray-700 to-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer"
           >
             <Github className="mr-2 h-5 w-5" />
             GitHub
@@ -33,7 +33,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/khambhampati-sahith-612988225/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
+            className="flex items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer"
           >
             <Linkedin className="mr-2 h-5 w-5" />
             LinkedIn
