@@ -1,9 +1,7 @@
 
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 
 const projects = [
   {
@@ -36,17 +34,13 @@ const Projects = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="outline" className="border-cyan-500 text-cyan-300">
                       {tech}
                     </Badge>
                   ))}
                 </div>
-                <Button variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-500/20">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Demo
-                </Button>
               </CardContent>
             </Card>
           ))}

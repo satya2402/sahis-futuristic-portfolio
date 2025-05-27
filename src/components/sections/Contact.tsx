@@ -21,7 +21,7 @@ const Contact = () => {
             Email Me
           </a>
           <a
-            href="https://github.com/sahithkumar1999"
+            href="https://github.com/sahithKhambhampati"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center bg-gradient-to-r from-gray-700 to-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
@@ -30,7 +30,7 @@ const Contact = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/sahith-kumar-khambhampati"
+            href="https://www.linkedin.com/in/khambhampati-sahith-612988225/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
